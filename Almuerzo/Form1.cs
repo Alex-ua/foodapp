@@ -24,7 +24,6 @@ namespace Almuerzo
     static string[] Scopes = { SheetsService.Scope.Spreadsheets };
     static string ApplicationName = "Google Sheets API .NET Quickstart";
     private static string PredefinedFoodDoc = "1GSXklTF_v_h918zluRpxXJfbggM7j_fjRbYDSWvlhyw";
-    private static string FoodOrderDoc = "1Or2ivpmF_MoounfN_k4ZeX78dgeKfh74wOzAvVbg6lY";
     private List<Food> _foods;
     private int _maxOrderDay = 6;
     private string _name;
@@ -35,7 +34,8 @@ namespace Almuerzo
     private static readonly string OrderFoodDocLink =
       "https://docs.google.com/spreadsheets/d/1cr-2gQjoW9ILCzwHLC6hecKbSiDHrMofgwg-hgjyMW8/edit#gid=269517142";
 
-    //private static string FoodOrderDoc = "1cr-2gQjoW9ILCzwHLC6hecKbSiDHrMofgwg-hgjyMW8"; // PROD
+    private static string FoodOrderDoc = "1cr-2gQjoW9ILCzwHLC6hecKbSiDHrMofgwg-hgjyMW8"; // PROD
+    //private static string FoodOrderDoc = "1Or2ivpmF_MoounfN_k4ZeX78dgeKfh74wOzAvVbg6lY";
 
     public Form1()
     {
@@ -243,6 +243,13 @@ namespace Almuerzo
 
     private void ClearInDocButton_Click(object sender, EventArgs e)
     {
+      _name = Properties.Settings.Default.Name;
+      if (string.IsNullOrEmpty(_name))
+      {
+        MessageBox.Show(this, "Empty Name");
+        return;
+      }
+
       var d = MessageBox.Show("Do you really want to clear doc?", "Important Question", MessageBoxButtons.YesNo);
       if (d == DialogResult.No) return;
 
