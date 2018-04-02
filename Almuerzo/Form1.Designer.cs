@@ -87,6 +87,8 @@
       // 
       // daysListBox
       // 
+      this.daysListBox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+      this.daysListBox.Enabled = false;
       this.daysListBox.FormattingEnabled = true;
       this.daysListBox.Location = new System.Drawing.Point(449, 112);
       this.daysListBox.Name = "daysListBox";
@@ -95,6 +97,7 @@
       // 
       // nameTbox
       // 
+      this.nameTbox.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
       this.nameTbox.Location = new System.Drawing.Point(97, 332);
       this.nameTbox.Name = "nameTbox";
       this.nameTbox.Size = new System.Drawing.Size(100, 20);
@@ -103,6 +106,7 @@
       // 
       // label1
       // 
+      this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
       this.label1.AutoSize = true;
       this.label1.Location = new System.Drawing.Point(24, 335);
       this.label1.Name = "label1";
@@ -112,6 +116,7 @@
       // 
       // lnkPredefined
       // 
+      this.lnkPredefined.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
       this.lnkPredefined.AutoSize = true;
       this.lnkPredefined.Location = new System.Drawing.Point(217, 335);
       this.lnkPredefined.Name = "lnkPredefined";
@@ -123,6 +128,7 @@
       // 
       // orderFoodDocLink
       // 
+      this.orderFoodDocLink.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
       this.orderFoodDocLink.AutoSize = true;
       this.orderFoodDocLink.Location = new System.Drawing.Point(317, 335);
       this.orderFoodDocLink.Name = "orderFoodDocLink";

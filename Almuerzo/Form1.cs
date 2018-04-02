@@ -287,6 +287,7 @@ namespace Almuerzo
     private void nameTbox_TextChanged(object sender, EventArgs e)
     {
       Properties.Settings.Default.Name = nameTbox.Text;
+      Properties.Settings.Default.Save();
     }
   }
 }
