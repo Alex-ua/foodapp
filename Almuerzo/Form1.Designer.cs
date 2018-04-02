@@ -154,7 +154,7 @@
       this.Controls.Add(this.GetRandomFoodBtn);
       this.MinimumSize = new System.Drawing.Size(550, 400);
       this.Name = "Form1";
-      this.Text = "Form1";
+      this.Text = "Almuerzo";
       ((System.ComponentModel.ISupportInitialize)(this.foodDataGridView)).EndInit();
       this.ResumeLayout(false);
       this.PerformLayout();
